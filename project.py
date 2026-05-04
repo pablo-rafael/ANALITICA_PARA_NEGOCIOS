@@ -48,6 +48,7 @@ print(df.describe())
 plt.figure(figsize=(10, 8))
 sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt=".2f")
 plt.title("Matriz de Correlação - California Housing")
+plt.savefig('img/matriz_correlacao.png', bbox_inches='tight')
 plt.show()
 
 # MODELAGEM
