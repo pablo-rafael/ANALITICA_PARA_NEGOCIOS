@@ -82,6 +82,9 @@ print(f"Erro Quadrático Médio (MSE): {mean_squared_error(y, y_pred):.4f}")
 
 print("\n--- Análise de Fluxo ---")
 
+etapa_perda = df_fluxo.loc[df_fluxo['Perda_Percentual'].idxmax(), 'Etapa']
+print(f"A maior perda ocorre na etapa: {etapa_perda}")
+
 # Simulação de dados de funil
 fluxo = {
     'Etapa': ['Visitas', 'Carrinho', 'Checkout', 'Pagamento'],
